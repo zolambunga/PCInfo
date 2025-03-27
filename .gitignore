@@ -1,0 +1,5 @@
+# Ignorar pastas de compilação e arquivos binários
+build/
+dist/
+*.exe
+
