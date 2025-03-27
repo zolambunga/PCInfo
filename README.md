@@ -28,6 +28,7 @@ PCInfo is a lightweight tool designed to collect and display detailed system inf
 If you want to build from source:
 1. Edit `pcinfo.ps1` as needed.
 2. Convert `pcinfo.ps1` into `pcinfo.exe` using PS2EXE.
+
 a)If you dont havE PS2EXE installed you an install it with
   ```powershell
   Install-Module PS2EXE -Scope CurrentUser
