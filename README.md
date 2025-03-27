@@ -27,8 +27,17 @@ PCInfo is a lightweight tool designed to collect and display detailed system inf
 ## Compilation
 If you want to build from source:
 1. Edit `pcinfo.ps1` as needed.
-2. Use Inno Setup to compile `pcinfo_setup.iss` into an installer.
-3. The compiled installer will register `pcinfo` as a command.
+2. Convert `pcinfo.ps1` into `pcinfo.exe` using PS2EXE.
+a)If you dont havE PS2EXE installed you an install it with
+  ```powershell
+  Install-Module PS2EXE -Scope CurrentUser
+  ```
+b) To convert `pcinfo.ps1` into `pcinfo.exe` use
+  ```powershell
+  Invoke-PS2EXE .\pcinfo.ps1 .\pcinfo.exe
+  ```
+3. Use Inno Setup to compile `pcinfo_setup.iss` into an installer.
+4. The compiled installer will register `pcinfo` as a command.
 
 ## License
 This project is open-source under the MIT License.
